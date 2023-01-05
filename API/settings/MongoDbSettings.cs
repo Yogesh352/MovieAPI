@@ -1,5 +1,6 @@
 namespace MovieApi.API.Settings {
     public class MongoDbSettings {
+        public string Name {get; set;}
         public string Host {get; set;}
         public int Port {get; set; }
 
