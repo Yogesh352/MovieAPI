@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MovieAPI\\API\\API.csproj": {}
+    "c:\\MovieAPI\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\MovieAPI\\API\\API.csproj": {
+    "c:\\MovieAPI\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MovieAPI\\API\\API.csproj",
+        "projectUniqueName": "c:\\MovieAPI\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\MovieAPI\\API\\API.csproj",
+        "projectPath": "c:\\MovieAPI\\API\\API.csproj",
         "packagesPath": "C:\\Users\\yanut\\.nuget\\packages\\",
-        "outputPath": "C:\\MovieAPI\\API\\obj\\",
+        "outputPath": "c:\\MovieAPI\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yanut\\AppData\\Roaming\\NuGet\\NuGet.Config",
