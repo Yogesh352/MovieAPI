@@ -139,3 +139,7 @@ c:\MovieAPI\UnitTests\obj\Debug\net5.0\UnitTests.dll
 c:\MovieAPI\UnitTests\obj\Debug\net5.0\ref\UnitTests.dll
 c:\MovieAPI\UnitTests\obj\Debug\net5.0\UnitTests.pdb
 c:\MovieAPI\UnitTests\obj\Debug\net5.0\UnitTests.genruntimeconfig.cache
+C:\MovieAPI\UnitTests\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\MovieAPI\UnitTests\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\MovieAPI\UnitTests\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\MovieAPI\UnitTests\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll

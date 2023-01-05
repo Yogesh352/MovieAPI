@@ -7,5 +7,10 @@ namespace MovieApi.Api {
              return new MovieDto (movie.Id, movie.Title, movie.Description, movie.CreatedDate);
             
         }
+
+        public static ActorDto AsDto(this Actor actor){
+             return new ActorDto (actor.Id, actor.Name);
+            
+        }
     }
 }

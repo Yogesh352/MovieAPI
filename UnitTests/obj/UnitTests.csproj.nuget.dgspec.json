@@ -44,6 +44,14 @@
               "target": "Package",
               "version": "[6.0.2, )"
             },
+            "AspNetCore.Identity.Mongo": {
+              "target": "Package",
+              "version": "[8.3.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
             "MongoDB.driver": {
               "target": "Package",
               "version": "[2.18.0, )"

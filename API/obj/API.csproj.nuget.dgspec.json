@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\MovieAPI\\API\\API.csproj": {}
+    "C:\\MovieAPI\\api\\API.csproj": {}
   },
   "projects": {
-    "c:\\MovieAPI\\API\\API.csproj": {
+    "C:\\MovieAPI\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\MovieAPI\\API\\API.csproj",
+        "projectUniqueName": "C:\\MovieAPI\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\MovieAPI\\API\\API.csproj",
+        "projectPath": "C:\\MovieAPI\\api\\API.csproj",
         "packagesPath": "C:\\Users\\yanut\\.nuget\\packages\\",
-        "outputPath": "c:\\MovieAPI\\API\\obj\\",
+        "outputPath": "C:\\MovieAPI\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yanut\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,18 @@
             "AspNetCore.HealthChecks.MongoDb": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "AspNetCore.Identity.Mongo": {
+              "target": "Package",
+              "version": "[8.3.3, )"
+            },
+            "AspNetCore.Identity.MongoDbCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
             },
             "MongoDB.driver": {
               "target": "Package",

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Mime;
 using System.Text.Json;
 using System.Threading.Tasks;
+using AspNetCore.Identity.Mongo;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
@@ -19,6 +20,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
+using MovieApi.API.Entities;
 using MovieApi.API.Repositories;
 using MovieApi.API.Settings;
 
@@ -39,12 +41,20 @@ namespace API
             BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
             BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
             var mongoDbSettings = Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
+
+            services.AddIdentity<ApplicationUser, ApplicationRole>().
+                AddMongoDbStores<ApplicationUser, ApplicationRole,Guid>(
+                    mongoDbSettings.ConnectionString, mongoDbSettings.Name
+                );
             
             services.AddSingleton<IMongoClient>(serviceProvider => {
                 
                 return new MongoClient(mongoDbSettings.ConnectionString);
             });
-            services.AddSingleton<MovieRepositoryInterface, MongoDbItemsRepository>();
+            services.AddSingleton<MovieRepositoryInterface, MongoDbMoviesRepository>();
+            services.AddSingleton<ActorRepositoryInterface, MongoDbActorsRepository>();
+             services.AddSingleton<UserRepositoryInterface, MongoDbUsersRepository>();
+
             services.AddControllers(options => {
                 options.SuppressAsyncSuffixInActionNames = false;
             });
@@ -80,6 +90,7 @@ namespace API
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             
             app.UseEndpoints(endpoints =>

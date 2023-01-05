@@ -11,5 +11,8 @@ namespace MovieApi.API.Entities
         public string Description {get; set;}
 
         public DateTimeOffset CreatedDate {get; set;}
+
+        public int ActorId { get; set; }
+        public Actor Actor { get; set; }
     }
 }
